@@ -5,7 +5,7 @@ import Ordenes from './components/paginas/Ordenes';
 import Usuarios from './components/paginas/Usuarios';
 import Productos from './components/paginas/Productos';
 import Login from './components/paginas/Login';
-
+import ActualizarProducto from "./components/paginas/ActualizarProducto";
 import DetalleOrdenes from "./components/paginas/DetalleOrdenes";
 import DetalleUsuarios from "./components/paginas/DetalleUsuarios";
 import DetalleProductos from "./components/paginas/DetalleProductos";
@@ -27,6 +27,8 @@ function App() {
                 <Route path="/nueva-orden" element={<DetalleOrdenes/> }/>
                 <Route path="/nuevo-producto" element={<DetalleProductos/> }/>
                 <Route path="/nuevo-usuario" element={<DetalleUsuarios/> }/>
+                <Route path="/actualizar-producto/:id" element={< ActualizarProducto/>} />
+
       </Routes>
     </div>
     </div>
